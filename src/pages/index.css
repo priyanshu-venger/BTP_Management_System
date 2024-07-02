@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+
+* {
+	font-family: 'poppins', sans-serif;
+}
+
+body {
+	background-image: url('./images/reg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
+#username {
+	color: red;
+}
+
+.box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 90vh;
+}
+
+.container {
+	width: 350px;
+	display: flex;
+	flex-direction: column;
+	padding: 0 15px 0 15px;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+
+}
+
+span {
+	color: #fff;
+	font-size: small;
+	display: flex;
+	justify-content: center;
+	padding: 10px 0 10px 0;
+}
+
+header {
+	color: #fff;
+	font-size: 30px;
+	display: flex;
+	justify-content: center;
+	padding: 10px 0 10px 0;
+}
+
+.input-field .input {
+	height: 45px;
+	width: 87%;
+	border: none;
+	border-radius: 30px;
+	color: #fff;
+	font-size: 15px;
+	padding: 0 0 0 45px;
+	background: rgba(255, 255, 255, 0.1);
+	outline: none;
+}
+
+i {
+	position: relative;
+	top: -33px;
+	left: 17px;
+	color: #fff;
+}
+
+::-webkit-input-placeholder {
+	color: #fff;
+}
+
+.submit {
+	border: none;
+	border-radius: 30px;
+	font-size: 15px;
+	height: 45px;
+	outline: none;
+	width: 100%;
+	color: black;
+	background: rgba(255, 255, 255, 0.7);
+	cursor: pointer;
+	transition: .3s;
+}
+
+.submit:hover {
+	box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+.two-col {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	color: #fff;
+	font-size: small;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.one {
+	display: flex;
+}
+
+label a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.reg {
+	color: #111;
+	font-size: 1.2rem;
+	text-decoration: none;
+}
+
+.acc {
+	color: #fff;
+	font-size: 1.2rem;
+	text-decoration: none;
+}
+
+.clerk {
+	color: #fff;
+	font-size: 1.1rem;
+	text-decoration: none;
+}
+
+.top a:hover {
+	color: #FE6244;
+	text-decoration: solid;
+}
+
+.one a:hover {
+	color: #86A3B8;
+}
+
+.one {
+	margin-top: 20px;
+}
+
+.two a:hover {
+	color: #86A3B8;
+}
+
+.two {
+	margin-top: 20px;
+}
+
+/* Flash messages styling */
+.flash-message {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	z-index: 1000;
+	padding: 10px;
+	background-color: #f8d7da;
+	/* Error message background color */
+	color: #721c24;
+	/* Error message text color */
+	border-radius: 5px;
+	animation: fadeOut 8s forwards;
+	/* Automatically fade out after 8 seconds */
+}
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+		display: none;
+	}
+}
+
+/* ======================================================================= */
+/* Custom style for error messages */
+
+.error {
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	color: red;
+	font-weight: bold;
+	margin-top: 10px;
+	/*margin-bottom: 10px; */
+	text-align: center;
+}
+
+.signupOTP {
+	display: none;
+	margin-bottom: 1rem;
+}
+
+
+/* ======================================================================= */
+/* Copied from forgot_password.html */
+
+.forgotContainer {
+	width: 400px;
+	margin: 100px auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.forgotH2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.forgotLabel {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.forgotEmail {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+.forgotSubmit {
+	width: 100%;
+	padding: 10px;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.forgotSubmit:hover {
+	background-color: #0056b3;
+}
+
+
+/* ======================================================================= */
+/* Copied from https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css that is referred in signup.html */
+
+.form-group {
+	margin-bottom: 1rem;
+}
+
+.signupLabel {
+	display:inline-block;
+	margin-bottom: .5rem;
+}
+
+.btn {
+	display:inline-block;
+	font-weight:400;
+	color:#212529;
+	text-align:center;
+	vertical-align:middle;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-color:transparent;
+	border:1px solid transparent;
+	padding:.375rem .75rem;
+	font-size:1rem;
+	line-height:1.5;
+	border-radius:.25rem;
+	transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-primary {
+	color:#fff;
+	background-color:#007bff;
+	border-color:#007bff;
+}
+
+.form-control {
+	display:block;
+	width:95%;
+	height:calc(1.5em + .75rem + 2px);
+	padding:.375rem .75rem;
+	font-size:1rem;
+	font-weight:400;
+	line-height:1.5;
+	color:#495057;
+	background-color:#fff;
+	background-clip:padding-box;
+	border:1px solid #ced4da;
+	border-radius:.25rem;
+	transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.signupContainer {
+	width: 500px;
+	margin: 100px auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ======================================================================= */
+/* Copied from profile.html */
+
+.profile-info {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 20px;
+	margin-top: 20px;
+	background-color: #fff;
+}
+
+.profile-info p {
+	margin: 10px 0;
+}
+
+.profile-info ul {
+	margin-top: 10px;
+	padding-left: 20px;
+}
+
+.profile-info ul li {
+	list-style-type: square;
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.button {
+	padding: 10px 20px;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.button:hover {
+	background-color: #0056b3;
+}
+
